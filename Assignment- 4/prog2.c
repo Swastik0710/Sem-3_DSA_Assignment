@@ -1,4 +1,4 @@
-//Write a program to sort the all elements of an array in ascending order using bubble sort technique.
+//Write a program to sort all the elements of an array in ascending order using bubble sort technique.
 #include<stdio.h>
 int main()
 {

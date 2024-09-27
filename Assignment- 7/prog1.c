@@ -1,4 +1,4 @@
-//Write a program to implement all functions (insert- first, insert- last, insert- any, delete- first, delete- last & delete- any) of singly linked list.
+//Write a program to implement all functions (insert- first, insert- last, insert- any, delete- first, delete- last, delete- any, sort list, reverse list & search) of singly linked list.
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Node {
@@ -103,6 +103,45 @@ struct Node* deleteAny(struct Node* head, int position) {
     }
     return head;
 }
+struct Node* sortList(struct Node* head) {
+    if (head == NULL || head->next == NULL) {
+        return head;
+    }
+    struct Node *i, *j;
+    int temp;
+    for (i = head; i->next != NULL; i = i->next) {
+        for (j = i->next; j != NULL; j = j->next) {
+            if ((i->data) > (j->data)) {
+                temp = i->data;
+                i->data = j->data;
+                j->data = temp;
+            }
+        }
+    }
+    return head;
+}
+struct Node* reverseList(struct Node* head) {
+    struct Node *prev = NULL, *current = head, *next = NULL;
+    while (current != NULL) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    return prev;
+}
+int search(struct Node* head, int value) {
+    struct Node *temp = head;
+    int position = 1;
+    while (temp != NULL) {
+        if (temp->data == value) {
+            return position;
+        }
+        temp = temp->next;
+        position++;
+    }
+    return -1;
+}
 void display(struct Node* head) {
     struct Node *temp = head;
     printf("Linked list: \n");
@@ -126,7 +165,7 @@ int main() {
     struct Node *head = NULL;
     int ch, value, position;
     while (1) {
-        printf("\n1. Insert- first\n2. Insert- last\n3. Insert- any\n4. Delete- first\n5. Delete- last\n6. Delete- any\n7. Display\n8. Exit\n");
+        printf("\n1. Insert- first\n2. Insert- last\n3. Insert- any\n4. Delete- first\n5. Delete- last\n6. Delete- any\n7. Sort List\n8. Reverse List\n9. Search\n10. Display\n11. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &ch);
         switch (ch) {
@@ -169,9 +208,30 @@ int main() {
             head = deleteAny(head, position);
             break;
         case 7:
+            head = sortList(head);
+            printf("List has been sorted.\n");
             display(head);
             break;
         case 8:
+            head = reverseList(head);
+            printf("List has been reversed.\n");
+            display(head);
+            break;
+        case 9:
+            printf("Enter the element to search: ");
+            scanf("%d", &value);
+            position = search(head,value);
+            if (position != 1) {
+                printf("Element %d is found at position %d.\n", value, position);
+            }
+            else {
+                printf("Element %d is not found in the list.\n", value);
+            }
+            break;
+        case 10:
+            display(head);
+            break;
+        case 11:
             printf("Program exited.\n");
             return 0;
         default:

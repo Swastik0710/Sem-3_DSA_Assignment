@@ -14,6 +14,7 @@ Each folder contains specific program files, each with its own DSA focus.
 - **Assignment- 6** - Checking for the qualification for a sparse matrix and to reverse a string using stack data structure.
 - **Assignment- 7** - Enactment of all basic functions of singly linked list. 
 - **Assignment- 8** - Enactment of all basic functions of circular linked list.
+- **Assignment- 9** - Enactment of all basic functions of doubly linked list.
 - **Assignment- 1 using function** - Programs showcasing insertion & deletion operations at any position in arrays using functions.
 
 ## 💻 Programs Overview
@@ -51,11 +52,13 @@ Each folder contains specific program files, each with its own DSA focus.
 ### **Assignment- 8**
 1. `prog1.c` - Implementation of all functions of circular linked list.
 
+### **Assignment- 9**
+1. `prog1.c` - Implementation of all functions of doubly linked list.
+
 ### **Assignment- 1 using function**
 1. `prog1.c` - Insertion of element(s) at any position in an array using functions.
 2. `prog2.c` - Deletion of element(s) at any position in an array using functions.
 3. `prog3.c` - Insertion of element(s) in a 2D array and displaying them using functions.
-
 
 ---
 

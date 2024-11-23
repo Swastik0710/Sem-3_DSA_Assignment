@@ -41,9 +41,11 @@ Each folder contains specific program files, each with its own DSA focus.
 ### **Sorting**
 1. `bubble_sort.c` - Sorting the elements of an array using bubble sort technique.
 2. `insertion_sort.c` - Sorting the elements of an array using insertion sort technique.
-3. `merge_sort_function.c` - Sorting the elements of an array using merge sort technique by using function.
-4. `quick_sort_function.c` - Sorting the elements of an array using quick sort technique by using function.
-5. `selection_sort.c` - Sorting the elements of an array using selection sort technique.
+3. `merge_sort.c` - Sorting the elements of an array using merge sort technique.
+4. `merge_sort_function.c` - Sorting the elements of an array using merge sort technique by using function.
+5. `quick_sort.c` - Sorting the elements of an array using quick sort technique.
+6. `quick_sort_function.c` - Sorting the elements of an array using quick sort technique by using function.
+7. `selection_sort.c` - Sorting the elements of an array using selection sort technique.
 
 ### **Stack**
 1. `infix_to_postfix.c` - Conversion of infix expression to its equivalent postfix expression.

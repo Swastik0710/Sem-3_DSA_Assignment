@@ -2,7 +2,48 @@
 
 This repository includes individual assignments from Semester 3 Data Structures and Algorithms coursework, covering different DSA concepts.
 
-## 📂 Folder Structure 
+## 📂 Folder Structure
+
+```bash
+Sem-3_DSA_Assignment/
+├── Array Operations/
+│   ├── array_2D_insert.c
+│   ├── array_2D_insert_function.c
+│   ├── array_delete.c
+│   ├── array_delete_function.c
+│   ├── array_insert.c
+│   ├── array_insert_function.c
+│   └── sparse_matrix.c
+│
+├── Linked List/
+│   ├── singly_linked_list.c
+│   ├── doubly_linked_list.c
+│   └── circular_linked_list.c
+│
+├── Queue/
+│   ├── linear_queue.c
+│   └── circular_queue.c
+│
+├── Searching/
+│   ├── linear_search.c
+│   └── binary_search.c
+│
+├── Sorting/
+│   ├── bubble_sort.c
+│   ├── insertion_sort.c
+│   ├── selection_sort.c
+│   ├── merge_sort.c
+│   ├── merge_sort_function.c
+│   ├── quick_sort.c
+│   └── quick_sort_function.c
+│
+├── Stack/
+│   ├── stack.c
+│   ├── infix_to_postfix.c
+│   └── string_reverse_stack.c
+│
+└── README.md
+```
 
 Each folder contains specific program files, each with its own DSA focus.
 
